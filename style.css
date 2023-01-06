@@ -1,0 +1,123 @@
+/* set an image for the background and fix it, this image cover the entire screen */
+body{
+    min-height: 100; 
+    background-image: url("peakpx.jpg");
+    background-repeat: no-repeat; 
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    color: white;
+}
+/* this is the main rectangle that contains two tables
+table location : center */
+.rectangle-main{
+    border-spacing: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* set the location of the left rectangle at the left part of the screen
+set a glassy style for the background
+set height and width of the table */
+.rectangle-left{ 
+    align-items: center;
+    text-align: center;
+    width: 500px;
+    height: 400px;
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    border-radius: 25px;
+    border-collapse: separate;
+    background: rgba(255, 255, 255, 0);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 1);
+    }
+
+/* set the location of the right rectangle at the right part of the screen
+set a glassy style for the background
+set height and width of the table */
+.rectangle-right{
+    padding:50px; 
+    width: fit-content;
+    height: 400px;
+    font-size:x-large;
+    position: absolute;
+    top: 50%;
+    left: 73%;
+    transform: translate(-50%, -50%);
+    border-radius: 25px;
+    border-collapse: separate;
+    border-spacing: 15px;
+    background-color: white;
+    background: rgba(255, 255, 255, 0);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 1);
+    }
+
+/* make the information table at the center of the rectangle
+align cells of the table */
+.user-info{
+    width: 400px;
+    border-spacing: 20px;
+    align-items: center;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+}
+/* align text of the cells */
+.td_center{
+    text-align: center;
+}
+/* change the background and text color of the button
+make the borders round and change the font size and width*/
+#button-style{
+    margin-top: 25px;
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 1);
+    border-radius: 10px;
+    width: 100px;
+    font-size: 18px;
+    background-color: purple;
+}
+/* change the background of the text box and make the borders round*/
+.insert-box{
+    background-color: purple;
+    font-size: 14px;
+    border: 1px solid rgba(255, 255, 255, 1);
+    border-radius: 20px;
+}
+/* set height and width for the profile image and maeke the profile image circular */
+img{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+}
+/* set size of the cell and align the item inside the cell */
+#cell0{
+    width: fit-content;
+    align-items: center;
+}
+/* set size of the cell and align the item inside the cell */
+#cell1{
+    width: fit-content;
+    align-items: center;
+}
+/* fix size of the cell and align the item inside the cell */
+#cell2{
+    align-items: center;
+    width: 200px;
+}
+/* fix size of the cell and align the item inside the cell */
+#cell3{
+    align-items: center;
+    width: 200px;
+}
+/* change the color of the placeholder for text box */
+::placeholder{
+    color: purple;
+}
